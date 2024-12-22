@@ -1,0 +1,31 @@
+.cardTema {
+  width: 30%;
+  text-align: center;
+  margin: 0 auto;
+}
+.cardTema button {
+  border: 0;
+}
+/* Classe da mettere nello state */
+.temaDark {
+  background-color: black;
+  color: white;
+}
+.temaDark h3 {
+  color: orange;
+}
+
+.temaDark button {
+  background-color: rgb(255, 140, 0);
+}
+/* Classe da mettere nello state */
+.temaLight {
+  background-color: lightblue;
+  color: black;
+}
+.temaLight h3 {
+  color: rgb(0, 45, 248);
+}
+.temaLight button {
+  background-color: rgb(255, 0, 0);
+}
