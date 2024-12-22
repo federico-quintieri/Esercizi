@@ -5,7 +5,7 @@ export function Calculator() {
   const [oggettoInput, setOggettoInput] = useState({
     firstInput: 0,
     secondInput: 0,
-    operazione: "+",
+    operazione: "Addizione",
     result: 0,
   });
 
