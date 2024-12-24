@@ -1,4 +1,3 @@
-import { use } from "react";
 import { useState } from "react";
 import style from "./ThemeSwitcher.module.css";
 
