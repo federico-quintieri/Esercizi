@@ -1,4 +1,4 @@
-let arrayTasks = require("../tasks");
+const arrayTasks = require("../tasks");
 // Il file dei controller contiene solo le callback function delle rotte in pratica
 
 // Rotta GET che risponde con array di task
@@ -35,10 +35,7 @@ function destroy(req, res) {
   const nuovoArray = arrayTasks.filter(
     (currObject) => currObject.id !== idToDestroy
   );
-
-  arrayTasks = nuovoArray;
-
-  res.json(arrayTasks);
+  res.json(nuovoArray);
 }
 
 module.exports = { index, show, store, destroy };
