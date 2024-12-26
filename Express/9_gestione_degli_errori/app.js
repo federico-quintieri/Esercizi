@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const port = 3000;
 const router = require("./routes/routes");
+const routerUsers = require("./routes/routesUsers");
 
 app.use(express.json());
 app.use(express.static("public"));
@@ -17,6 +18,7 @@ app.use((req, res, next) => {
 });
 
 app.use("/Products", router);
+app.use("/user", routerUsers);
 
 app.get("/", () => console.log("Benvenuto su Express!"));
 
@@ -24,6 +26,5 @@ app.get("/", () => console.log("Benvenuto su Express!"));
 app.use((req, res) => {
   res.status(404).json({ error: "404 - Route non trovata" });
 });
-
 
 app.listen(port, () => console.log("Sono in ascolto"));
